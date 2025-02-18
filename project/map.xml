@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Real Estate Documents Application">
+  <elements>
+    <element name="public" function="templates" path="public" scope="system" visibility="private">
+      <folder>panels</folder>
+      <folder primary="true">frontend</folder>
+      <folder>backend</folder>
+    </element>
+    <element name="users" path="admin/unac/users" acl="0" visibility="public">
+      <folder function="model">models</folder>
+      <folder function="controller">controllers</folder>
+      <folder function="view">views</folder>
+      <folder function="schema">schema</folder>
+    </element>
+    <element name="upload" path="admin/upload" acl="0" visibility="public">
+      <folder function="model">models</folder>
+      <folder function="controller">controllers</folder>
+      <folder function="view">views</folder>
+      <folder function="schema">schema</folder>
+    </element>
+    <element name="docanalysis" path="admin/docanalysis" acl="0" visibility="public">
+      <folder function="model">models</folder>
+      <folder function="controller">controllers</folder>
+      <folder function="view">views</folder>
+      <folder function="schema">schema</folder>
+    </element>
+  </elements>
+</project>

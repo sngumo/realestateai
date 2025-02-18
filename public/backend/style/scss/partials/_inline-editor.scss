@@ -1,0 +1,78 @@
+.edit-mode{
+    color: #fff;
+    padding: 13px;
+    font-size: 20px;
+    position: absolute;
+    top: -3px;
+}
+
+#inline-overlay{
+    /*display: none;*/
+    overflow: auto;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    transition: opacity .15s linear;
+    background-color: black;
+    opacity: 0.3;
+}
+
+#inline-edit-section{
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    z-index: 1050;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .inline-content{
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: .3rem;
+        outline: 0;
+        border-radius: 10px;
+        box-shadow: none;
+        overflow: hidden;
+        
+        input{
+            box-shadow: none;
+            border: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 50px;
+            font-size: 25px;
+        }
+        
+        a.btn{
+            width: 100%;
+            padding: 15px 20px 13px 20px;
+            
+            &.btn-primary{
+                color: white;
+            }
+        }
+    }
+}

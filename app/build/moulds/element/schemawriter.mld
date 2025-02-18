@@ -1,0 +1,27 @@
+<?php
+namespace {{{schm_namespace}}}\Tools;
+
+use {{{schm_namespace}}}\{{{schm_classname}}};
+use Jenga\App\Database\Systems\Pdo\Schema\AnnotationsWriter as Annotate;
+
+/**
+ * This is the writer class for the {{{schm_classname}}} class file
+ *
+ * @author stanley
+ */
+class {{{schm_classname}}}Writer {
+    
+    /**
+     * Use the Annotator to create annotated columns in the {{{schm_classname}}} class
+     */
+    public function write($update){
+        
+        return Annotate::in({{{schm_classname}}}::class)
+                            ->column('id', ['INT(10)','NOT NULL','AUTO_INCREMENT'])
+                                ->primary()
+
+                //INSERT THE REMAINING {{{schm_classname}}} COLUMNS HERE
+
+                        ->write($update);                 
+    }
+}

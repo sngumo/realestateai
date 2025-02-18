@@ -1,0 +1,34 @@
+@import "loader";
+@import "formwizard";
+@import "variables";
+@import "common";
+@import "helper";
+@import "widgets";
+@import "shortcuts";
+@import "responsive";
+@import "misc";
+@import "modal";
+@import "checkbox";
+@import "material-design-form";
+@import "login";
+@import "upload";
+@import "toggle-switch";
+@import "buttons";
+@import "themify-icons/themify-icons.scss";
+
+#customer-deletion-form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 380px) {        
+    
+    #customer-deletion-form{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        
+        .login-form.frontend {
+            width: 340px;
+        }
+    }
+}

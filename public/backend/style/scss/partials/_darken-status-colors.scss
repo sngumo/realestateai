@@ -1,0 +1,28 @@
+&.open {
+  background-color: darken($open, 20%);
+  color: #fff;
+}
+&.paused {
+  background-color: darken($paused, 10%);
+  color: #fff;
+}
+&.cancelled {
+  background-color: darken($cancelled, 10%);
+  color: #fff;
+}
+&.overdue {
+  background-color: darken($overdue, 10%);
+  color: #fff;
+}
+&.closed {
+  background-color: darken($closed, 10%);
+  color: #fff;
+}
+&.trashed {
+  background-color: darken($trashed, 10%);
+  color: #fff;
+}
+&.paid{
+    background-color: $paid;
+    color: #fff;
+}

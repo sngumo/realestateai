@@ -1,0 +1,52 @@
+&.open {
+  background-color: desaturate($open, 2%);
+  color: #fff;
+}
+&.paused {
+  background-color: saturate($paused, 2%);
+  color: #fff;
+
+  a {
+      color: #fff !important;
+  }
+
+  .app-label{
+      color: #fff !important;
+  }
+
+  .btn-outline-paused{
+      color: $paused !important;
+  }
+}
+&.cancelled {
+  background-color: desaturate($cancelled, 2%);
+  color: #fff;
+
+  .btn-outline-cancelled{
+      color: $cancelled;
+  }
+}
+&.overdue {
+  background-color: desaturate($overdue, 2%);
+  color: #fff;
+}
+&.closed {
+  background-color: desaturate($closed, 2%);
+  color: #fff;
+
+  .btn-outline-closed{
+      color: $closed;
+  }
+}
+&.trashed {
+  background-color: desaturate($trashed, 2%);
+  color: #fff;
+}
+&.paid{
+    background-color: desaturate($paid, 2%);
+    color: #fff;
+}
+&.partial{
+    background-color: desaturate($partial, 2%);
+    color: #fff;
+}

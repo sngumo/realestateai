@@ -1,0 +1,32 @@
+<?php
+namespace {{{gateway_namespace}}};
+
+use Jenga\App\Request\Session;
+use Jenga\App\Project\Security\Traits\Authentication;
+use Jenga\App\Project\Security\GatewayInterface;
+
+class Gateway implements GatewayInterface {
+    
+    use Authentication;
+    
+    /**
+     * Set the user attributes in the attributes array
+     * @example $attributes = ['id','fullname','username','password','accesslevel','loggedin'];
+     *
+     * The attributes set here will be accessed from the global $this->user() function
+     * @example $this->user()->fullname or $this->user()->getFullname()
+     */
+    public function setUserAttributes() { 
+ 
+        $attributes = [];
+        $this->user->setAttributes($attributes);
+    }
+    
+    /**
+     * This set the element that will be used to authenticate the system users and 
+     * therefore isn't subject to any autorization events which may restrict its access
+     */
+    public function setAuthorizationElement() {
+        $this->auth_element = '{{{gateway_element}}}';
+    }
+}

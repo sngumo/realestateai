@@ -1,0 +1,154 @@
+#doctopbar{
+    background-color: #f5f5f5;
+    width: 100%;
+    min-height: 80px;
+    top: 0px;
+    z-index: 1000;
+    
+    h2{
+        font-weight: bold;
+        color: #2a2929;
+    }
+    
+    .top-heading{
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        
+        sup{
+            font-size: 60%;
+            font-weight: normal;
+        }
+    }
+
+    .btn{
+        width: auto;
+        font-size: 11px;
+        border-radius: 10px;
+        border: 2px solid #1263F5;
+        color: #1263F5;
+        padding: 7px 15px;
+
+        &.btn-hover-blue{
+            &:hover{
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+                color: white;
+            }
+        }
+        &.btn-hover-red{
+            &:hover{
+                background-color: #dc3545;
+                border-color: #dc3545;
+                color: white;
+            }
+        }
+    }
+}
+
+#block-sections{
+    
+    .block{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        min-height: 70px;
+        
+        &.white{
+            background-color: white;
+        }
+        
+        &.center{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-content: center;
+            align-items: center;
+        }
+        
+        
+    }
+    
+    #terms-concerns{
+        .block{
+            border: 1px solid #e7e4e4;
+            
+            &.active{
+                background-color: white;
+                color: #1263F5;
+                border: 2px solid #1263F5;
+            }
+        }
+    }
+    
+    #doc-header{
+        font-size: 12px;
+        
+        .blue{
+            padding: 5px 10px;
+            background-color: #d7ebf1;
+            border-radius: 10px;
+        }
+    }
+    
+}
+    
+#docanalysis{
+
+    .doc-block{
+        min-height: 80vh;
+        border-radius: 10px;
+        box-shadow: -2px 9px 8px 1px #80808024;
+        background-color: white;
+    }
+    
+    #business-terms{
+        
+        &.fixed{
+            position: fixed;
+            top: 0;
+            right: 44px;
+            min-height: 98vh;
+            width: 32%;
+        }
+        
+        .progress-border{
+                background-color: #f1f1f1 !important;
+                border-radius: 20px;
+                overflow: hidden;
+                
+                .progress-green{
+                    background-color: #4CAF50 !important;
+                    border-radius: 10px;
+                }
+        }
+        
+        #analysis-tabs{
+            height: 65vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        
+        .analysis-row{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 2px;
+            margin-bottom: 3px;
+            border-radius: 7px;
+            box-shadow: 0px 5px 5px 1px #80808024;
+            
+            &:hover{
+                background-color: #e2f3fd;
+            }
+
+            &.row-success{
+            }
+
+            &.row-failure{
+            }
+        }
+    }
+}

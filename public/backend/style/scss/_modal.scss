@@ -1,0 +1,194 @@
+/*
+    Modal Styles
+*/
+div.showpreload{
+    width: 170px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0 0px 10px 6px rgba(12, 12, 12, 0.2);
+    
+    .modal-content & {
+        box-shadow: none;
+    }
+    
+    .drawer-content & {
+        top: 15em;
+        position: absolute;
+        left: 40%;
+        right: 50%;
+    }
+}
+.modal-header{
+    padding: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.428571429px;
+    color: white;
+    padding-bottom: 20px;
+}
+.modal-title{
+    font-size: 20px;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.modal-footer{
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    
+    & .btn{
+        margin-left: 0px !important;
+        border-radius: 0px;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+#quick-payments-panel {
+        
+    & div.panel{
+        background: transparent;
+        border: 0px none transparent;
+        padding: 20px;
+        padding-top: 10px;
+
+        &-title{
+            background: transparent;
+            padding-top: 5px;
+        }
+    }
+
+    & div.gridtable {
+        width: 97%;
+        max-width: none; 
+        margin-bottom: 20px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+
+        & div.row{
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 6px rgba(77,101,117,0.2);
+            margin-bottom: 4px;
+
+            &.field-row{
+
+                & > .row{
+                    display: block;
+                }
+
+                & .payno {
+                    width: 10%;
+                    float: left;
+                    padding-left: 0px;
+                }
+
+                & .pay-description {
+                    width: 60%;
+                    float: left;
+
+                    & .paycustomer{
+                        padding-bottom: 0px;
+                        font-weight: 300;
+                        font-size: 16px;
+                        color: #000000;
+
+                        & > span.receiptno {
+                            margin-left: 5px;
+                            color: #8a8787;
+                            display: block;
+                            margin-left: 5px;
+                            font-size: 14px;
+
+                            &::before{
+                                content: "Receipt #";
+                            }
+                        }
+                    }
+
+                    & .paydate{
+                        padding: 0px;
+                        padding-left: 20px;
+                        font-size: 11px;
+                        color: #a9a7a6;
+                    }
+
+                    & .payinv{
+                        padding: 0px;
+                        padding-left: 20px;
+                        font-weight: 300;
+                        font-size: 15px;
+                        letter-spacing: 0px;
+                        color: #32577b;
+
+                        &::before{
+                            content: "Inv. ";
+                        }
+                    }
+
+                    & .paybuttons{
+                        padding-left: 20px;
+
+                        & > div{
+                            display: block;
+                            width: auto;
+                            float: left;
+                            padding: 0px;
+                            padding-bottom: 15px;
+
+                            & .btn-sm{
+                                font-size: 11px;
+                                padding: 3px 7px;
+                            }
+                        }
+                    }
+                }
+
+                & .payfigures {
+                    width: 40%;
+                    float: left;
+                    text-align: right;
+                    margin-top: 7px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding-left: 0px;
+                    padding-bottom: 0px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    letter-spacing: -1px;
+
+                    & .transid{
+                        padding-left: 0px;
+                        padding-top: 0px;
+                    }
+
+                    & .payamt {
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        color: #45a55c;
+
+                        &::before{
+                            content: 'ksh';
+                        }
+                    }
+                }
+            }
+
+            &.footerrow{
+                box-shadow: 0 0 0 transparent;
+                background: transparent;
+                border: 0px none transparent;
+            }
+        }
+    }
+}

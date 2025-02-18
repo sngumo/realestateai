@@ -1,0 +1,40 @@
+{
+    "require": {
+        "symfony/console": "^3.0",
+        "symfony/http-kernel": "^3.0",
+        "symfony/http-foundation": "^3.0",
+        "symfony/routing": "^3.0",
+        "symfony/config": "^3.0",
+        "php-di/php-di": "^5.3",
+        "doctrine/annotations": "^1.2",
+        "ocramius/proxy-manager": "~1.0",
+        "jan-swiecki/simple-annotations": "^0.3.1",
+        "monolog/monolog": "^1.0",
+        "php-console/php-console": "^3.1",
+        "theorchard/monolog-cascade": "^0.4.1",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "nesbot/carbon": "^2.0",
+        "league/flysystem": "^1.0",
+        "peppeocchi/php-cron-scheduler": "^2.3",
+        "tecnickcom/tcpdf": "^6.2",
+        "defuse/php-encryption": "^2.2",
+        "kreait/firebase-php": "^5.19",
+        "openai-php/client": "^0.7.8",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "psr/container": "*",
+        "crunzphp/crunz": "*",
+        "jaybizzle/crawler-detect": "^1.2",
+        "phpmailer/phpmailer": "^6.9",
+        "smalot/pdfparser": "^2.11"
+    },
+    "config": {
+        "vendor-dir" : "plugins",
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true,
+            "php-http/discovery": true
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.2"
+    }
+}

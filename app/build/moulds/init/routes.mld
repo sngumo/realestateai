@@ -1,0 +1,7 @@
+<?php
+/**
+ * This is where the user can specify the specific routing for his/her elements
+ */
+use Jenga\App\Project\Routing\Route;
+
+Route::get('/', '{default}');

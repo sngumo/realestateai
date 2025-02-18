@@ -1,0 +1,10 @@
+<?php
+namespace {{{view_namespace}}};
+
+use Jenga\App\Views\View;
+
+class {{{view_classname}}} extends View {
+
+
+}
+

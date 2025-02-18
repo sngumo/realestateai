@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+// set to run indefinitely if needed
+set_time_limit(0);
+
+//set error reporting
+error_reporting(E_ERROR | E_PARSE);
+
+/* 
+ * Register the AutoLoader
+ */
+
+require __DIR__.'/shell/cli.environment.php';
+
+//initialize the Cli console
+$cli = new Jenga\App\Console\Cli( 
+            PROJECT_PATH .DS. 'config.php',
+            PROJECT_PATH .DS. 'routes.php',
+            PROJECT_PATH .DS. 'events.php');
+
+$cli->boot();
+
+$commands = $cli->loadCommands();
+$cli->run($commands);

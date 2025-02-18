@@ -1,0 +1,103 @@
+#mobile-billing-summary{
+    font-family: "Roboto", sans-serif;
+    
+    #content{
+        height: 60vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #bottom-btn{
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        border-top: 1px solid #dee2e6;
+    }
+}
+#mobile-notifications{
+    #content{
+        height: 80vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+        .list-w-title{
+            font-size: 90%;
+                
+            h4{
+                font-size: 15px;
+                font-family: "Montserrat", sans-serif;
+            }
+            
+            .date{
+                top: 13px;
+            }  
+            
+            .read{
+                background-color: #f1f0f0;
+            }
+            
+            .unread{
+                color: #37353E;
+            }
+        } 
+    }
+}
+#my-profile-holder{    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 15;
+    height: 100vh;
+    display: block;
+    background-color: #ecebeb;
+    
+    #profile-icon{
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        background-color: #58656e;
+        border: 5px solid aliceblue;
+        padding: 30px;
+        border-radius: 65px;
+        
+        i{
+            font-size: 60px;
+            color: aliceblue;
+        }
+    }
+    
+    .close-profile{
+        i{
+            font-weight: bold;
+            font-size: 25px;
+        }
+    }
+    
+    h4{
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .profile-links{
+        background-color: white;
+        height: 45vh;
+        border-radius: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        
+        a{
+            color: #7b7e80;
+            font-size: 17px;
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #bfbcbc;
+            /*border-top: 1px solid #bfbcbc;*/
+        }
+    }
+}

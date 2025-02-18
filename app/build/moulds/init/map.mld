@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="{{{projectname}}}">  
+  <elements>
+      <element name="public" function="templates" path="public" scope="system" visibility="private"></element>
+  </elements>  
+</project>

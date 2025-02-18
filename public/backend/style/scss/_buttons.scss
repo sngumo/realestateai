@@ -1,0 +1,15 @@
+.btn-light {
+  background-color: #fff;
+  color: inherit;
+  border: 1px solid #BDC4C9
+}
+
+.btn-light:hover,.btn-light:focus,.btn-light.focus,.btn-light:active,.btn-light.active,.open>.dropdown-toggle.btn-light {
+  background-color: #f9f9f9;
+  color: inherit
+}
+
+.btn-light:active,.btn-light.active,.open>.dropdown-toggle.btn-default {
+  box-shadow: none;
+  color: inherit
+}

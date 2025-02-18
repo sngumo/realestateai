@@ -1,0 +1,21 @@
+<?php
+namespace {{{ctrl_namespace}}};
+
+use Jenga\App\Controllers\Controller;
+
+use {{{full_model_name}}};
+use {{{full_view_name}}};
+
+/**
+ * Class {{{ctrl_classname}}}
+ * 
+ * @property-read {{{model_class_name}}} $model
+ * @property-read {{{view_class_name}}} $view
+ * 
+ * @package {{{ctrl_namespace}}}
+ */
+class {{{ctrl_classname}}} extends Controller{
+    
+    public function index(){
+    }
+}

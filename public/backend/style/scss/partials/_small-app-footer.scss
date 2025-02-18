@@ -1,0 +1,27 @@
+.app-footer{
+    height: 6vh;
+
+    .menu {
+
+        #btn-create-followup{
+            bottom: 0px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            height: auto;
+        }
+
+        .item {
+
+            i {
+                font-size: 18px;
+                margin-top: -5px;
+            }
+
+            span{
+                display: none;
+            }
+        }
+    }
+}
+        

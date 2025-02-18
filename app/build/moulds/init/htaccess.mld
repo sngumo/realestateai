@@ -1,0 +1,16 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+
+#if the framework is in its own folder, uncomment and use the code below
+RewriteBase /{{{projectfolder}}}/
+
+#Otherwise if on a remote web server, uncomment and use the code below
+#RewriteBase /
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.+)$ index.php?cmd=$1  [QSA,NC,L]
+

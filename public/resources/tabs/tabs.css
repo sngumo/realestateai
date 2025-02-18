@@ -1,0 +1,167 @@
+/* 
+    Created on : Aug 12, 2017, 7:27:04 PM
+    Author     : Stanley Ngumo
+*/
+
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+  z-index: 10;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-left: 0px;
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  
+}
+div.element-tab-menu{
+    height: 390px;
+    overflow: auto;
+    direction: rtl;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group > a{
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-left: 30px;  
+}
+div.bhoechie-tab-menu div.list-group > a > p{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #5A55A3;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-container{
+    margin-right: 0px;
+}
+div.bhoechie-tab-menu div.list-group>a.active{
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #538b3e;
+}
+
+div.bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+div.bhoechie-tab-content h3{
+    margin-top: -10px;
+}
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+div.bhoechie-tab-content .well-sm{
+    height: 100px;
+}
+div.bhoechie-tab-content .underline{
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #aaa;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+div.bhoechie-tab-content h1, div.bhoechie-tab-content h2, div.bhoechie-tab-content h3,
+div.bhoechie-tab-content h4, div.bhoechie-tab-content h5, div.bhoechie-tab-content h6{
+    font-weight: 300;
+}
+div.bhoechie-tab-content .col-lg-9,
+div.bhoechie-tab-content .col-md-9,
+div.bhoechie-tab-content .col-sm-9,
+div.bhoechie-tab-content .col-xs-9,
+div.bhoechie-tab-content .col-lg-3,
+div.bhoechie-tab-content .col-md-3,
+div.bhoechie-tab-content .col-sm-3,
+div.bhoechie-tab-content .col-xs-3{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+div.bhoechie-tab-content div.tab-content{
+    margin-left: 0px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #EBEBEB;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #EBEBEB;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #EBEBEB;
+}
+div.bhoechie-tab-content ul.nav-tabs li{
+    background-color: #F3F3F3;
+}
+div.bhoechie-tab-content ul.nav-tabs li a{
+    color: #666;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #E1E1E1;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #E1E1E1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #E1E1E1;
+}
+div.bhoechie-tab-content ul.nav-tabs li.active a{
+    background-color: #538b3e;
+    border: 1px;
+    border-color: #538b3e;
+    border-style: solid;
+    color: #FFF;
+    border-left: 4px solid #0c0;
+}
+div.bhoechie-tab-content ul.nav-tabs li.active a{
+    
+}
+div.bhoechie-tab-content ul.nav-tabs li.active a:after {
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #538b3e;
+    border-top: 13px solid transparent;
+    content: "";
+    left: 100%;
+    margin-top: -13px;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+}
+div.bhoechie-tab-menu div.list-group > a.active{
+}
+div.bhoechie-tab-content blockquote{
+    background-color: #fcefa1;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #F60;
+    font-size: 14px;
+}
+div.bhoechie-tab-content blockquote footer{
+    color: #C30;
+}

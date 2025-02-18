@@ -1,0 +1,14 @@
+<?php
+/**
+ *
+ * This is where all the various events will be declared and subsequently executed by the system
+ * 
+ * Use the following naming conventions
+ * - Use only lowercase letters, numbers, dots (.) and underscores (_);
+ * - Prefix names with a namespace followed by a dot (e.g. order., user.*);
+ * - End names with a verb that indicates what action has been taken (e.g. order.placed)
+ *
+ */
+
+return [''=> [] ];
+

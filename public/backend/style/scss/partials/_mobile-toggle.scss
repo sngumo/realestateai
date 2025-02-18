@@ -1,0 +1,109 @@
+.switch-light.switch-candy input ~ span span:first-child,
+.switch-light.switch-candy input:checked ~ span span:nth-child(2),
+.switch-candy input:checked + label{
+    top: 0;
+}
+
+.switch-toggle label:nth-child(2):nth-last-child(4), 
+.switch-toggle label:nth-child(2):nth-last-child(4) ~ label, 
+.switch-toggle label:nth-child(2):nth-last-child(4) ~ a{
+    top: 0;
+    padding-top: 5px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #191b1e;
+}
+.switch-toggle.switch-candy, .switch-light.switch-candy > span{
+    height: 40px;
+    border-radius: 17px;
+}
+.switch-candy a{
+    border-radius: 12px;
+    border: 1px solid #525558;
+}
+.switch-toggle a {
+    display: block;
+    transition: all 0.2s ease-out;
+}
+.switch-toggle label:nth-child(2):nth-last-child(4) ~ input:checked:nth-child(3) + label ~ a {
+    left: 50%;
+}
+
+.date-select{
+    height: 115px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block;
+    margin-top: 0px;
+
+    ul{
+        min-width: 400px;
+
+        h3{
+            margin-top: -10px;
+            margin-bottom: -10px;
+            margin-left: -5px;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: -2px;
+        }
+    }
+
+    a.btn{
+        background-color: #fff;
+        min-width: 70px;
+        width: auto;
+        color: #2b3033;
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-radius: 12px;
+        border: 1px solid #b7b4b4;
+        font-size: 11px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        padding: 10px;
+        float: left;
+        margin-right: 5px;
+
+        &.btn-success{
+            background-color: #1e7e34;
+            color: white;
+
+            h3{
+                color: white;
+            }
+        }
+
+        .date-select-top{
+            border-bottom: 1px solid #e6e3e3;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+
+            i{
+                font-size: 4em;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+#reminder-repeat{
+    & .date-select{
+        height: 55px;
+
+        & ul{
+            min-width: 350px;
+        }
+
+        & a.btn{
+            font-size: 14px;
+            border-radius: 20px;
+            border: 3px solid #b7b4b4;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+

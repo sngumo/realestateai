@@ -1,0 +1,118 @@
+.login-form {
+    
+    background: #fff;
+    width: 360px;
+    padding-top: 30px;
+    margin: 0px auto;
+    text-shadow: none;
+    border-radius: 3px;
+
+    &.frontend{
+        width: 40vw;
+        border-radius: 10px;
+        box-shadow: -2px 9px 8px 1px #80808024;
+    }
+    
+    h1{
+        font-size: 30px !important;
+        font-weight: 400 !important;
+    }
+    
+    & img {
+      margin-bottom: 18px;
+    }
+    & .profile {
+      border-radius: 999px;
+    }
+    & .top {
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      padding: 30px 80px;
+    }
+    & .top .icon {
+      width: 100px;
+      height: 100px;
+    }
+    & .top h1,
+    & .top h4 {
+      margin: 0;
+    }
+    & .top h1 {
+      color: #37363E;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin-top: -14px;
+    }
+    & .top h4 {
+      font-weight: normal;
+      color: #76757B;
+      font-size: 15px;
+    }
+    & .form-area {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+    }
+    & .form-area .group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    & .form-area .form-control {
+      padding-left: 38px;
+      height: 40px;
+      width: 90%;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+    & .form-area .fa {
+      position: absolute;
+      top: 33px;
+      left: 13px;
+      font-size: 16px;
+      color: #C3C3C3;
+
+      &.username {
+          top: 33px;
+          left: 85px;
+      }
+      &.password {
+          top: 88px;
+          left: 85px;
+      }
+    }
+    &.admin .form-area .fa {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      font-size: 16px;
+      color: #C3C3C3;
+
+      &.username {
+          top: 33px;
+          left: 65px;
+      }
+      &.password {
+          top: 88px;
+          left: 65px;
+      }
+    }
+    & .form-area .btn-default {
+      height: 42px;
+      font-weight: 600;
+      background-color: #27303a;
+    }
+    & .form-area .checkbox {
+      margin-bottom: 20px;
+    }
+    & .footer-links {
+      color: #76757B;
+      padding: 10px 5px;
+    }
+    & .footer-links a {
+      color: #76757B;
+    }
+    & .footer-links a:hover {
+      color: #37363E;
+    }
+}
