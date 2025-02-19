@@ -85,7 +85,7 @@ function embedPDF(docpath){
         enableSearchAPIs: true
    };
 
-    let adobeDCView = new AdobeDC.View({clientId: "8253602ce520417587d46e3dda200a13", divId: "adobe-dc-view"});
+    let adobeDCView = new AdobeDC.View({clientId: "6b24a9e977904f868d9ea4249ce0f4c1", divId: "adobe-dc-view"});
     
     previewFilePromise = adobeDCView.previewFile({
       content:{location: {url: docpath}},
